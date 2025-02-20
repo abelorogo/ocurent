@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O CURRENT SOLUTIONS | Reliable Electrical Services</title>
+    <link rel="stylesheet" href="{% static 'electricity/css/home.css' %}">
+    <script defer src="{% static 'electricity/js/script.js' %}"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="{% static 'electricity/images/logo.png' %}" alt="O CURRENT SOLUTIONS Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="{% url 'collection' %}">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Powering the Future with Excellence</h1>
+            <p>O CURRENT SOLUTIONS delivers cutting-edge electrical, security, and solar energy solutions. We provide reliable and sustainable energy systems for homes, businesses, and industries.</p>
+            <a href="{% url 'collection' %}" class="discover-btn">Discover</a>
+        </div>
+        <div class="hero-image">
+            <img src="{% static 'electricity/images/logo.png' %}" alt="Electricity Solutions">
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="{% static 'electricity/images/cctv.png' %}" alt="CCTV Surveillance">
+            <h3>CCTV Surveillance</h3>
+            <p>High-definition security camera systems for 24/7 monitoring and safety.</p>
+        </div>
+
+        <div class="feature">
+            <img src="{% static 'electricity/images/alarm.png' %}" alt="Alarm Systems">
+            <h3>Alarm Systems</h3>
+            <p>State-of-the-art alarm systems to detect and prevent unauthorized access.</p>
+        </div>
+
+        <div class="feature">
+            <img src="{% static 'electricity/images/electrical.png' %}" alt="Electrical Wiring">
+            <h3>Electrical Wiring</h3>
+            <p>Professional-grade wiring solutions ensuring safety and efficiency.</p>
+        </div>
+
+        <div class="feature">
+            <img src="{% static 'electricity/images/solar.png' %}" alt="Solar Energy">
+            <h3>Solar Energy</h3>
+            <p>Eco-friendly solar solutions for sustainable power generation.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="newsletter">
+                <h2>Stay Connected with O CURRENT SOLUTIONS</h2>
+                <p>Join our newsletter for the latest updates on innovative electrical solutions, security systems, and sustainable energy.</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <small>We value your privacy. Unsubscribe anytime. Read our <a href="#">privacy policy</a>.</small>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>O CURRENT SOLUTIONS is a leading provider of electrical, security, and solar energy solutions. We ensure safety, efficiency, and sustainability in every project we undertake.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Electrical Installations</a></li>
+                        <li><a href="#">Security Systems</a></li>
+                        <li><a href="#">Solar Energy Solutions</a></li>
+                        <li><a href="#">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>📍 Office: Fedha, Nairobi</p>
+                    <p>📞 +254 796685652</p>
+                    <p>📞 +254 715167679</p>
+                    <p>📧 oserojo9@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 O CURRENT SOLUTIONS. Powering the future with excellence.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
